@@ -10,7 +10,7 @@ The premise of this challenge is to see the approach you take to:
 - Respond to a request in a consistent and logical manner
 - Test your work with both unit tests and integration tests.
 
-Your objective is to write some models and manipulate them through routes. Please make sure that the endpoints scales adequately and supports paging, sorting and filtering. Additionally, we would also like you to write some tests for your routes.
+Your objective is to write some models and manipulate them through routes. Additionally, we would also like you to write some tests for your routes.
 
 ## Challenge
 1. Use [Sequelize](http://docs.sequelizejs.com/manual/installation/getting-started), [TypeORM](https://typeorm.io/) or [Mongoose](https://mongoosejs.com/) to define:
@@ -40,7 +40,7 @@ Your objective is to write some models and manipulate them through routes. Pleas
     
     4.2 `POST /users/create` Creates a user and based on the user’s email domain links them to an institution. Denies creation of a user if their domain does not exist.
     
-    4.3 `GET /books` Once authenticated, responds with a JSON object containing a list of Books that the user has access to via their Institution.
+    4.3 `GET /books` Once authenticated, responds with a JSON object containing a list of Books that the user has access to via their Institution. Please make sure that the endpoint scales adequately and supports paging, sorting and filtering.
     
 4. (Optional) Provide a [Postman](https://www.getpostman.com/) collection which performs some basically functionality on the routes you've created.
 
