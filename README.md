@@ -13,7 +13,7 @@ The premise of this challenge is to see the approach you take to:
 Your objective is to write some models and manipulate them through routes. Please make sure that the endpoints scales adequately and supports paging, sorting and filtering. Additionally, we would also like you to write some tests for your routes.
 
 ## Challenge
-1. Use [Sequelize](http://docs.sequelizejs.com/manual/installation/getting-started), [TypeORM] (https://typeorm.io/) or [Mongoose](https://mongoosejs.com/) to define:
+1. Use [Sequelize](http://docs.sequelizejs.com/manual/installation/getting-started), [TypeORM](https://typeorm.io/) or [Mongoose](https://mongoosejs.com/) to define:
 
    1.1. A **`User`** model which should have basic identifying information:
       - Name
