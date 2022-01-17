@@ -31,7 +31,8 @@ Your objective is to write some models and manipulate them through routes. Addit
       - Title
       - Author.
       
-   1.4. Relationships between **`Users`** and **`Institutions`**, and **`Books`** and **`Institutions`** (Consider #4.3 in the relationships you create).
+   1.4. Relationships between **`Users`** and **`Institutions`**, and **`Books`** and **`Institutions`** (books owned by institution). Consider #4.3 in the relationships you create.
+   
 2. Use [Express](https://expressjs.com/) to respond to requests.
 
 3. Create routes:
@@ -39,6 +40,10 @@ Your objective is to write some models and manipulate them through routes. Addit
     4.1 `POST /users/signin` Use the passport library to authenticate a user.
     
     4.2 `POST /users/create` Creates a user and based on the user’s email domain links them to an institution. Denies creation of a user if their domain does not exist.
+    Examples:
+      * if the email of the new user is john@huji.ac.il it should be "linked" to "The Hebrew University Of Jerusalem" (because the email׳s domain corresponds with the "Email domain" property of the Institution... )
+
+    * if the email of the new user is john@nonExistingDomain.com, the creation should be denied by the systme (becausethere is no institution with the domain)
     
     4.3 `GET /books` Once authenticated, responds with a JSON object containing a list of Books that the user has access to via their Institution. Please make sure that the endpoint scales adequately and supports paging, sorting and filtering.
     
