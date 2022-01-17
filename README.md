@@ -43,7 +43,7 @@ Your objective is to write some models and manipulate them through routes. Addit
     Examples:
       * if the email of the new user is john@huji.ac.il it should be "linked" to "The Hebrew University Of Jerusalem" (because the email׳s domain corresponds with the "Email domain" property of the Institution... )
 
-    * if the email of the new user is john@nonExisting.EmailDomain.com, the creation should be denied by the systme (becausethere is no institution with the domain)
+    * if the email of the new user is john@nonExisting.EmailDomain.com, the creation should be denied by the systme (because there is no institution with the domain)
     
     4.3 `GET /books` Once authenticated, responds with a JSON object containing a list of Books that the user has access to via their Institution. Please make sure that the endpoint scales adequately and supports paging, sorting and filtering.
     
