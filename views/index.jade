@@ -6,6 +6,6 @@ block content
   p Created by Or Harazi (phone number: +972526560180)
   br
   br
-  h4 POST <a href="/users/signin">/posts</a> - create new post, require request body of {title: "title", body: "body", username: "username"}.
-  h4 POST <a href="/users/create">/posts</a> - create new post, require request body of {title: "title", body: "body", username: "username"}.
-  h4 GET <a href="/books">/postsnumber</a> - returns json with object of total posts number.
+  h4 POST <a href="/users/create">/users/create</a> - create new user, require request body of {name: "name", emailAddress: "emailAddress", role: "role", password: "password"}.
+  h4 POST <a href="/users/signin">/users/signin</a> - return JWT to authenticate "/books", require request body of {emailAddress: "emailAddress", password: "password"}.
+  h4 GET <a href="/books">/books</a> - returns json with books the user permission, need to padd JWT in header,  example: headers: {Authorization: JWT {generated token}}

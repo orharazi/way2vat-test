@@ -46,7 +46,7 @@ router.post('/create', async function(req, res) {
 
           //handel error on saving user
           if (err) {
-            res.status(400).json({success: false, msg: `User already exists. ${err}`});
+            res.status(409).json({success: false, msg: `User already exists. ${err}`});
           } else {
 
             //send user created notice
