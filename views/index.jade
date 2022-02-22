@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}!
+  p Created by Or Harazi (phone number: +972526560180)
+  br
+  br
+  h4 POST <a href="/users/signin">/posts</a> - create new post, require request body of {title: "title", body: "body", username: "username"}.
+  h4 POST <a href="/users/create">/posts</a> - create new post, require request body of {title: "title", body: "body", username: "username"}.
+  h4 GET <a href="/books">/postsnumber</a> - returns json with object of total posts number.
